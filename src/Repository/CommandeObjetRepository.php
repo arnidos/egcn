@@ -2,27 +2,27 @@
 
 namespace App\Repository;
 
-use App\Entity\Contact;
+use App\Entity\CommandeObjet;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Contact>
+ * @extends ServiceEntityRepository<CommandeObjet>
  *
- * @method Contact|null find($id, $lockMode = null, $lockVersion = null)
- * @method Contact|null findOneBy(array $criteria, array $orderBy = null)
- * @method Contact[]    findAll()
- * @method Contact[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method CommandeObjet|null find($id, $lockMode = null, $lockVersion = null)
+ * @method CommandeObjet|null findOneBy(array $criteria, array $orderBy = null)
+ * @method CommandeObjet[]    findAll()
+ * @method CommandeObjet[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class ContactRepository extends ServiceEntityRepository
+class CommandeObjetRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Contact::class);
+        parent::__construct($registry, CommandeObjet::class);
     }
 
 //    /**
-//     * @return Contact[] Returns an array of Contact objects
+//     * @return CommandeObjet[] Returns an array of CommandeObjet objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -36,7 +36,7 @@ class ContactRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Contact
+//    public function findOneBySomeField($value): ?CommandeObjet
 //    {
 //        return $this->createQueryBuilder('c')
 //            ->andWhere('c.exampleField = :val')

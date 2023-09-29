@@ -10,14 +10,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class RecrutementController extends AbstractController
 {
     #[Route('/recrutement', name: 'recrutement')]
-    public function recrutementAction()
+    public function recrutementAction(): Response
     {
-        // Récupère la liste des offres d'emploi
-        $offresEmploi = $this->em->getRepository(OffreEmploi::class)->findAll();
-
-        // Retourne la liste des offres d'emploi
-        return $this->render('recrutement/index.html.twig', [
-            'offresEmploi' => $offresEmploi,
+        return $this->render('contact/recrutement.html.twig', [
+            'controller_name' => 'RecrutementController',
         ]);
     }
 }
