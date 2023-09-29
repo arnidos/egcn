@@ -3,3 +3,36 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+caisse_index:
+    path: /caisse/index
+    controller: App\Controller\CaisseController::indexAction
+
+caisse_consommables:
+    path: /caisse/consommables/index
+    controller: App\Controller\CaisseConsommablesController::consommablesAction
+
+caisse_outils:
+    path: /caisse/outils/index
+    controller: App\Controller\CaisseOutilsController::outilsAction
+
+
+solution_index:
+    path: /solution/index
+    controller: App\Controller\SolutionController::indexAction
+
+solution_video:
+    path: /solution/video/index
+    controller: App\Controller\SolutionVideoController::videoAction
+
+solution_titres_restaurant:
+    path: /solution/titres-restaurant/index
+    controller: App\Controller\SolutionTitresRestaurantController::titres-restaurantAction
+
+contact_index:
+    path: /contact/index
+    controller: App\Controller\ContactController::indexAction
+
+contact_recrutement:
+    path: /contact/recrutement/index
+    controller: App\Controller\RecrutementController::recrutementAction    

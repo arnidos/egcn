@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!
+{% endblock %}
+
+{% block content %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
+
+	<div class="example-wrapper">
+		<h1>Groupe EGCN
+																		
+			Contactez-nous !</h1>
+
+		<h3>Entrez en contact avec nos experts en encaissement</h3>
+		<form action="mailto:info@egcn.fr" method="post" enctype="text/plain">
+			<label for="nom">Nom*</label>
+			<input type="text" id="nom" name="nom"><br><br>
+			<label for="email">Email*</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="telephone">Telephone*</label>
+			<input type="text" id="telephone" name="telephone"><br><br>
+			<label for="message">Message*</label>
+			<textarea id="message" name="message"></textarea><br><br>
+			<input type="submit" value="Envoyer">
+		</form>
+
+		<p>Note : veuillez remplir les champs marqués d'un *.
+						
+						04.92.02.01.11
+						
+						1662 RD6007 - AZUR BURO
+						
+						06270 VILLENEUVE - LOUBET
+						
+						info@egcn.fr</p>
+
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDBL3P" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+	</div>
+{% endblock %}
